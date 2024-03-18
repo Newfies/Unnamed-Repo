@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open Window and Execute Script</title>
+<script>
+function openWindowAndExecuteScript() {
+  // Open a new window to google.com
+  var newWindow = window.open('https://www.google.com', '_blank');
+  
+  // Once the new window is loaded, execute the script
+  newWindow.onload = function() {
+    newWindow.document.write('<script>alert("hello")</script>');
+  };
+}
+</script>
+</head>
+<body>
+<button onclick="openWindowAndExecuteScript()">Open Window and Execute Script</button>
+</body>
+</html>
