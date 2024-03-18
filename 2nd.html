@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open Window and Write Content</title>
+</head>
+<body>
+<button onclick="openWindowAndWriteContent()">Open Window and Write Content</button>
+
+<script type="module">
+  function openWindowAndWriteContent() {
+    // Open a new window to example.com
+    var newWindow = window.open('https://www.example.com/', '_blank');
+
+    // Set onload event handler for the new window
+    newWindow.onload = function() {
+      // Write HTML content to the new window
+      newWindow.document.write(`<h1>New Page Opened Successfully</h1>`);
+    };
+  }
+</script>
+</body>
+</html>
