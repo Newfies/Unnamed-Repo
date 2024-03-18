@@ -10,8 +10,8 @@
 
 <body>
 
-<h1 style="color: green;">
-	Red
+<h1 style="color: red;">
+	Close Google Tab
 </h1>
 
 <p>
@@ -20,7 +20,7 @@
 </p>
 
 <!-- Define the button to 
-	close the window -->
+	close a existing google tab -->
 <button onclick="return closeWindow();">
 	Close Window
 </button>
@@ -28,12 +28,9 @@
 <script type="text/javascript">
 	function closeWindow() {
 
-		// Open the new window 
-		// with the URL replacing the
-		// current page using the
-		// _self value
+
 		let new_window =
-			open(location, 'www.google.com');
+			('www.google.com');
 
 		// Close this window
 		new_window.close();
