@@ -14,9 +14,14 @@ function openWindowAndExecuteScript() {
     newWindow.document.write('<script>alert("hello")</script>');
   };
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  var button = document.querySelector('button');
+  button.addEventListener('click', openWindowAndExecuteScript);
+});
 </script>
 </head>
 <body>
-<button onclick="openWindowAndExecuteScript()">Open Google Tab and Execute A Script Onload</button>
+<button>Open Window and Execute Script</button>
 </body>
 </html>
